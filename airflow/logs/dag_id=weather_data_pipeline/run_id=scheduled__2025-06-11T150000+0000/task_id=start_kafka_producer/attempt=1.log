@@ -1,0 +1,34 @@
+[2025-06-11T16:50:16.421+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.start_kafka_producer scheduled__2025-06-11T15:00:00+00:00 [queued]>
+[2025-06-11T16:50:16.480+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.start_kafka_producer scheduled__2025-06-11T15:00:00+00:00 [queued]>
+[2025-06-11T16:50:16.486+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2025-06-11T16:50:16.588+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): start_kafka_producer> on 2025-06-11 15:00:00+00:00
+[2025-06-11T16:50:16.612+0000] {standard_task_runner.py:60} INFO - Started process 203 to run task
+[2025-06-11T16:50:16.635+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'start_kafka_producer', 'scheduled__2025-06-11T15:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmpgq34upuh']
+[2025-06-11T16:50:16.655+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask start_kafka_producer
+[2025-06-11T16:50:17.033+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.start_kafka_producer scheduled__2025-06-11T15:00:00+00:00 [running]> on host 65fc519ef84e
+[2025-06-11T16:50:17.626+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Daniel' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='start_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-06-11T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-11T15:00:00+00:00'
+[2025-06-11T16:50:17.633+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-06-11T16:50:17.643+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/real_api_producer.py']
+[2025-06-11T16:50:17.693+0000] {subprocess.py:86} INFO - Output:
+[2025-06-11T16:50:19.752+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-11T16:50:19.755+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/real_api_producer.py", line 7, in <module>
+[2025-06-11T16:50:19.759+0000] {subprocess.py:93} INFO -     producer = KafkaProducer(
+[2025-06-11T16:50:19.761+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/producer/kafka.py", line 381, in __init__
+[2025-06-11T16:50:19.764+0000] {subprocess.py:93} INFO -     client = KafkaClient(metrics=self._metrics, metric_group_prefix='producer',
+[2025-06-11T16:50:19.766+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/client_async.py", line 244, in __init__
+[2025-06-11T16:50:19.769+0000] {subprocess.py:93} INFO -     self.config['api_version'] = self.check_version(timeout=check_timeout)
+[2025-06-11T16:50:19.775+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/client_async.py", line 900, in check_version
+[2025-06-11T16:50:19.778+0000] {subprocess.py:93} INFO -     raise Errors.NoBrokersAvailable()
+[2025-06-11T16:50:19.780+0000] {subprocess.py:93} INFO - kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2025-06-11T16:50:19.961+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-06-11T16:50:20.047+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-06-11T16:50:20.083+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=start_kafka_producer, execution_date=20250611T150000, start_date=20250611T165016, end_date=20250611T165020
+[2025-06-11T16:50:20.174+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 3 for task start_kafka_producer (Bash command failed. The command returned a non-zero exit code 1.; 203)
+[2025-06-11T16:50:20.242+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-06-11T16:50:20.440+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

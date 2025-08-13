@@ -1,0 +1,28 @@
+[2025-08-07T12:35:54.323+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.check_kafka_availability scheduled__2025-06-01T00:00:00+00:00 [queued]>
+[2025-08-07T12:35:54.359+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.check_kafka_availability scheduled__2025-06-01T00:00:00+00:00 [queued]>
+[2025-08-07T12:35:54.361+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2025-08-07T12:35:54.428+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): check_kafka_availability> on 2025-06-01 00:00:00+00:00
+[2025-08-07T12:35:54.492+0000] {standard_task_runner.py:60} INFO - Started process 2637 to run task
+[2025-08-07T12:35:54.524+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'check_kafka_availability', 'scheduled__2025-06-01T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmpq549s41s']
+[2025-08-07T12:35:54.602+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask check_kafka_availability
+[2025-08-07T12:35:55.182+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.check_kafka_availability scheduled__2025-06-01T00:00:00+00:00 [running]> on host 3e2a6b15d0b2
+[2025-08-07T12:35:55.938+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Daniel' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='check_kafka_availability' AIRFLOW_CTX_EXECUTION_DATE='2025-06-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-01T00:00:00+00:00'
+[2025-08-07T12:35:55.948+0000] {conn.py:380} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+[2025-08-07T12:35:55.949+0000] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2025-08-07T12:35:55.950+0000] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+[2025-08-07T12:35:56.826+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2025-08-07T12:35:56.828+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2025-08-07T12:35:56.834+0000] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2025-08-07T12:35:56.947+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2025-08-07T12:35:56.950+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2025-08-07T12:35:56.978+0000] {conn.py:380} INFO - <BrokerConnection node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+[2025-08-07T12:35:56.980+0000] {conn.py:1205} INFO - Probing node 1001 broker version
+[2025-08-07T12:35:56.984+0000] {conn.py:410} INFO - <BrokerConnection node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+[2025-08-07T12:35:56.987+0000] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. 
+[2025-08-07T12:35:57.129+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2025-08-07T12:35:57.131+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2025-08-07T12:35:57.141+0000] {logging_mixin.py:188} INFO - ['test-topic', 'weather_data', '__consumer_offsets']
+[2025-08-07T12:35:57.143+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-08-07T12:35:57.220+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=check_kafka_availability, execution_date=20250601T000000, start_date=20250807T123554, end_date=20250807T123557
+[2025-08-07T12:35:57.340+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-08-07T12:35:57.414+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

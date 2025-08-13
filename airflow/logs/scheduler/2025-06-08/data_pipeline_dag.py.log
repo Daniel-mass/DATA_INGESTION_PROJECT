@@ -1,0 +1,882 @@
+[2025-06-08T07:59:55.006+0000] {processor.py:161} INFO - Started process (PID=1042) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T07:59:55.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T07:59:55.012+0000] {logging_mixin.py:188} INFO - [2025-06-08T07:59:55.012+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T07:59:55.150+0000] {logging_mixin.py:188} INFO - [2025-06-08T07:59:55.141+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T07:59:55.153+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T07:59:55.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.595 seconds
+[2025-06-08T08:01:15.223+0000] {processor.py:161} INFO - Started process (PID=1048) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:15.247+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:01:15.267+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:01:15.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:16.713+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:01:16.555+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:01:16.763+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:16.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 1.928 seconds
+[2025-06-08T08:01:47.200+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:47.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:01:47.205+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:01:47.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:47.277+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:01:47.262+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:01:47.283+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:01:47.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.193 seconds
+[2025-06-08T08:02:17.765+0000] {processor.py:161} INFO - Started process (PID=1060) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:17.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:02:17.770+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:02:17.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:17.808+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:02:17.799+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:02:17.811+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:17.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.099 seconds
+[2025-06-08T08:02:48.055+0000] {processor.py:161} INFO - Started process (PID=1065) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:48.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:02:48.059+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:02:48.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:48.113+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:02:48.101+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:02:48.260+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:02:48.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.585 seconds
+[2025-06-08T08:03:19.363+0000] {processor.py:161} INFO - Started process (PID=1070) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:19.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:03:19.389+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:03:19.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:19.432+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:03:19.422+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:03:19.436+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:19.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.122 seconds
+[2025-06-08T08:03:49.556+0000] {processor.py:161} INFO - Started process (PID=1075) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:49.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:03:49.559+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:03:49.559+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:49.585+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:03:49.578+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:03:49.587+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:03:49.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.079 seconds
+[2025-06-08T08:04:19.782+0000] {processor.py:161} INFO - Started process (PID=1080) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:19.784+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:04:19.785+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:04:19.785+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:19.820+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:04:19.811+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:04:19.823+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:19.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.077 seconds
+[2025-06-08T08:04:50.154+0000] {processor.py:161} INFO - Started process (PID=1085) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:50.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:04:50.159+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:04:50.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:50.200+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:04:50.190+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:04:50.204+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:04:50.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.112 seconds
+[2025-06-08T08:05:20.376+0000] {processor.py:161} INFO - Started process (PID=1090) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:20.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:05:20.378+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:05:20.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:20.413+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:05:20.406+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:05:20.416+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:20.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.080 seconds
+[2025-06-08T08:05:50.703+0000] {processor.py:161} INFO - Started process (PID=1095) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:50.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:05:50.709+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:05:50.708+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:50.768+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:05:50.758+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:05:50.772+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:05:50.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.165 seconds
+[2025-06-08T08:06:21.029+0000] {processor.py:161} INFO - Started process (PID=1100) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:21.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:06:21.033+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:06:21.032+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:21.062+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:06:21.054+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:06:21.064+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:21.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.083 seconds
+[2025-06-08T08:06:51.473+0000] {processor.py:161} INFO - Started process (PID=1105) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:51.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:06:51.483+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:06:51.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:51.536+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:06:51.524+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:06:51.539+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:06:51.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.127 seconds
+[2025-06-08T08:07:22.110+0000] {processor.py:161} INFO - Started process (PID=1110) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:22.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:07:22.115+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:07:22.115+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:22.156+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:07:22.145+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:07:22.158+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:22.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.104 seconds
+[2025-06-08T08:07:52.901+0000] {processor.py:161} INFO - Started process (PID=1115) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:52.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:07:52.917+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:07:52.916+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:53.018+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:07:52.991+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:07:53.031+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:07:53.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.261 seconds
+[2025-06-08T08:08:23.447+0000] {processor.py:161} INFO - Started process (PID=1120) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:23.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:08:23.456+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:08:23.455+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:23.534+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:08:23.522+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:08:23.538+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:23.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.179 seconds
+[2025-06-08T08:08:54.410+0000] {processor.py:161} INFO - Started process (PID=1125) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:54.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:08:54.419+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:08:54.418+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:54.489+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:08:54.469+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:08:54.496+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:08:54.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.189 seconds
+[2025-06-08T08:09:26.078+0000] {processor.py:161} INFO - Started process (PID=1130) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:26.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:09:26.093+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:09:26.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:26.163+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:09:26.152+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:09:26.167+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:26.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.160 seconds
+[2025-06-08T08:09:57.019+0000] {processor.py:161} INFO - Started process (PID=1135) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:57.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:09:57.031+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:09:57.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:57.082+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:09:57.067+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:09:57.085+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:09:57.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.146 seconds
+[2025-06-08T08:10:27.720+0000] {processor.py:161} INFO - Started process (PID=1140) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:27.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:10:27.728+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:10:27.727+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:27.837+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:10:27.818+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:10:27.842+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:27.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.226 seconds
+[2025-06-08T08:10:58.662+0000] {processor.py:161} INFO - Started process (PID=1145) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:58.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:10:58.669+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:10:58.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:58.714+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:10:58.706+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:10:58.717+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:10:58.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.133 seconds
+[2025-06-08T08:11:29.247+0000] {processor.py:161} INFO - Started process (PID=1150) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:11:29.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:11:29.255+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:11:29.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:11:29.332+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:11:29.318+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:11:29.337+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:11:29.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.165 seconds
+[2025-06-08T08:12:00.102+0000] {processor.py:161} INFO - Started process (PID=1155) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:00.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:12:00.110+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:12:00.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:00.181+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:12:00.166+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:12:00.188+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:00.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.160 seconds
+[2025-06-08T08:12:30.587+0000] {processor.py:161} INFO - Started process (PID=1160) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:30.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:12:30.592+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:12:30.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:30.638+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:12:30.626+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:12:30.641+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:12:30.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.107 seconds
+[2025-06-08T08:13:00.894+0000] {processor.py:161} INFO - Started process (PID=1165) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:00.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:13:00.899+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:13:00.898+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:00.948+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:13:00.934+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:13:00.954+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:01.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.156 seconds
+[2025-06-08T08:13:31.362+0000] {processor.py:161} INFO - Started process (PID=1170) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:31.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:13:31.367+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:13:31.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:31.414+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:13:31.404+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:13:31.418+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:13:31.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.119 seconds
+[2025-06-08T08:14:01.631+0000] {processor.py:161} INFO - Started process (PID=1175) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:01.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:14:01.638+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:14:01.636+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:01.694+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:14:01.680+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:14:01.698+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:01.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.138 seconds
+[2025-06-08T08:14:31.998+0000] {processor.py:161} INFO - Started process (PID=1180) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:31.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:14:32.000+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:14:32.000+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:32.032+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:14:32.024+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:14:32.035+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:14:32.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.085 seconds
+[2025-06-08T08:15:02.403+0000] {processor.py:161} INFO - Started process (PID=1185) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:02.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:15:02.409+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:15:02.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:02.456+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:15:02.446+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:15:02.460+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:02.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.123 seconds
+[2025-06-08T08:15:32.669+0000] {processor.py:161} INFO - Started process (PID=1190) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:32.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:15:32.672+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:15:32.672+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:32.697+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:15:32.691+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:15:32.699+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:15:32.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.056 seconds
+[2025-06-08T08:16:02.942+0000] {processor.py:161} INFO - Started process (PID=1195) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:02.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:16:02.946+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:16:02.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:02.994+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:16:02.985+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:16:02.996+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:03.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.103 seconds
+[2025-06-08T08:16:33.236+0000] {processor.py:161} INFO - Started process (PID=1200) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:33.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:16:33.239+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:16:33.239+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:33.264+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:16:33.258+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:16:33.266+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:16:33.292+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.059 seconds
+[2025-06-08T08:17:03.569+0000] {processor.py:161} INFO - Started process (PID=1205) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:03.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:17:03.573+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:17:03.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:03.612+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:17:03.604+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:17:03.615+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:03.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.099 seconds
+[2025-06-08T08:17:33.870+0000] {processor.py:161} INFO - Started process (PID=1210) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:33.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:17:33.875+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:17:33.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:33.917+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:17:33.908+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:17:33.920+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:17:33.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.102 seconds
+[2025-06-08T08:18:04.234+0000] {processor.py:161} INFO - Started process (PID=1215) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:04.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:18:04.238+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:18:04.238+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:04.278+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:18:04.270+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:18:04.283+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:04.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.088 seconds
+[2025-06-08T08:18:34.571+0000] {processor.py:161} INFO - Started process (PID=1220) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:34.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:18:34.576+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:18:34.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:34.613+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:18:34.604+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:18:34.615+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:18:34.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.111 seconds
+[2025-06-08T08:19:04.882+0000] {processor.py:161} INFO - Started process (PID=1225) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:04.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:19:04.886+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:19:04.885+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:04.921+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:19:04.915+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:19:04.923+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:04.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.087 seconds
+[2025-06-08T08:19:35.383+0000] {processor.py:161} INFO - Started process (PID=1230) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:35.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:19:35.398+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:19:35.396+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:35.526+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:19:35.499+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:19:35.537+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:19:35.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.266 seconds
+[2025-06-08T08:20:56.657+0000] {processor.py:161} INFO - Started process (PID=1235) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:20:56.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:20:56.742+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:20:56.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:20:58.188+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:20:58.006+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:20:58.248+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:20:58.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 1.708 seconds
+[2025-06-08T08:21:29.309+0000] {processor.py:161} INFO - Started process (PID=1241) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:21:29.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:21:29.316+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:21:29.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:21:29.396+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:21:29.378+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:21:29.406+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:21:29.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.218 seconds
+[2025-06-08T08:22:00.159+0000] {processor.py:161} INFO - Started process (PID=1246) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:00.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:22:00.164+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:22:00.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:00.207+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:22:00.197+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:22:00.211+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:00.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.100 seconds
+[2025-06-08T08:22:31.227+0000] {processor.py:161} INFO - Started process (PID=1251) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:31.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:22:31.230+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:22:31.230+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:31.257+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:22:31.252+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:22:31.260+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:22:31.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.072 seconds
+[2025-06-08T08:23:01.823+0000] {processor.py:161} INFO - Started process (PID=1256) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:01.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:23:01.839+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:23:01.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:01.912+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:23:01.896+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:23:01.917+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:02.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.288 seconds
+[2025-06-08T08:23:32.308+0000] {processor.py:161} INFO - Started process (PID=1261) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:32.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:23:32.312+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:23:32.312+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:32.345+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:23:32.337+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:23:32.347+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:23:32.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.084 seconds
+[2025-06-08T08:24:02.584+0000] {processor.py:161} INFO - Started process (PID=1266) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:02.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:24:02.590+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:24:02.589+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:02.643+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:24:02.635+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:24:02.646+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:02.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.099 seconds
+[2025-06-08T08:24:33.002+0000] {processor.py:161} INFO - Started process (PID=1271) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:33.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:24:33.007+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:24:33.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:33.036+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:24:33.029+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:24:33.040+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:24:33.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.083 seconds
+[2025-06-08T08:25:04.382+0000] {processor.py:161} INFO - Started process (PID=1276) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:25:04.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:25:04.464+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:25:04.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:25:05.240+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:25:05.060+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:25:05.265+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:25:05.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 1.140 seconds
+[2025-06-08T08:38:09.839+0000] {processor.py:161} INFO - Started process (PID=1283) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:09.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:38:09.867+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:38:09.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:10.328+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:38:10.209+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:38:10.375+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:10.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.723 seconds
+[2025-06-08T08:38:41.412+0000] {processor.py:161} INFO - Started process (PID=1288) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:41.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:38:41.417+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:38:41.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:41.467+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:38:41.455+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:38:41.470+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:38:41.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.114 seconds
+[2025-06-08T08:39:11.720+0000] {processor.py:161} INFO - Started process (PID=1293) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:11.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:39:11.726+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:39:11.725+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:11.767+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:39:11.757+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:39:11.771+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:11.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.106 seconds
+[2025-06-08T08:39:42.137+0000] {processor.py:161} INFO - Started process (PID=1298) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:42.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:39:42.141+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:39:42.141+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:42.184+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:39:42.177+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:39:42.186+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:39:42.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.095 seconds
+[2025-06-08T08:40:12.446+0000] {processor.py:161} INFO - Started process (PID=1303) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:12.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:40:12.450+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:40:12.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:12.490+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:40:12.480+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:40:12.493+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:12.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.093 seconds
+[2025-06-08T08:40:42.798+0000] {processor.py:161} INFO - Started process (PID=1308) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:42.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:40:42.802+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:40:42.802+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:42.842+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:40:42.834+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:40:42.845+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:40:42.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.091 seconds
+[2025-06-08T08:41:13.121+0000] {processor.py:161} INFO - Started process (PID=1313) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:13.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:41:13.126+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:41:13.125+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:13.166+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:41:13.157+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:41:13.170+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:13.196+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.081 seconds
+[2025-06-08T08:41:43.480+0000] {processor.py:161} INFO - Started process (PID=1318) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:43.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:41:43.484+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:41:43.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:43.518+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:41:43.509+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:41:43.520+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:41:43.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.094 seconds
+[2025-06-08T08:42:13.788+0000] {processor.py:161} INFO - Started process (PID=1323) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:13.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:42:13.795+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:42:13.794+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:13.834+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:42:13.824+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:42:13.837+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:13.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.084 seconds
+[2025-06-08T08:42:44.147+0000] {processor.py:161} INFO - Started process (PID=1328) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:44.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:42:44.151+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:42:44.150+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:44.181+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:42:44.175+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:42:44.183+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:42:44.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.083 seconds
+[2025-06-08T08:43:14.509+0000] {processor.py:161} INFO - Started process (PID=1333) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:14.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:43:14.512+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:43:14.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:14.552+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:43:14.544+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:43:14.555+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:14.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.083 seconds
+[2025-06-08T08:43:44.906+0000] {processor.py:161} INFO - Started process (PID=1338) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:44.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:43:44.909+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:43:44.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:44.935+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:43:44.930+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:43:44.938+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:43:44.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.073 seconds
+[2025-06-08T08:44:15.244+0000] {processor.py:161} INFO - Started process (PID=1343) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:15.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:44:15.247+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:44:15.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:15.277+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:44:15.269+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:44:15.279+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:15.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.077 seconds
+[2025-06-08T08:44:45.521+0000] {processor.py:161} INFO - Started process (PID=1348) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:45.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:44:45.524+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:44:45.523+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:45.552+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:44:45.545+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:44:45.555+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:44:45.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.079 seconds
+[2025-06-08T08:45:15.859+0000] {processor.py:161} INFO - Started process (PID=1353) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:45:15.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T08:45:15.862+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:45:15.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:45:15.890+0000] {logging_mixin.py:188} INFO - [2025-06-08T08:45:15.882+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T08:45:15.892+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T08:45:15.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.079 seconds
+[2025-06-08T12:44:04.779+0000] {processor.py:161} INFO - Started process (PID=1360) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T12:44:04.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-06-08T12:44:04.785+0000] {logging_mixin.py:188} INFO - [2025-06-08T12:44:04.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T12:44:04.924+0000] {logging_mixin.py:188} INFO - [2025-06-08T12:44:04.908+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/data_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_pipeline_dag.py", line 6, in <module>
+    from airflow.providers.apache.kafka.operators.produce import ProduceToTopicOperator
+ModuleNotFoundError: No module named 'airflow.providers.apache.kafka'
+[2025-06-08T12:44:04.928+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-06-08T12:44:05.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.289 seconds

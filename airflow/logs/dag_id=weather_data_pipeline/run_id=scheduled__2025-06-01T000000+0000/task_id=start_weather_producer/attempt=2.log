@@ -1,0 +1,34 @@
+[2025-08-11T06:12:59.706+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.start_weather_producer scheduled__2025-06-01T00:00:00+00:00 [queued]>
+[2025-08-11T06:12:59.713+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.start_weather_producer scheduled__2025-06-01T00:00:00+00:00 [queued]>
+[2025-08-11T06:12:59.714+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2025-08-11T06:12:59.727+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): start_weather_producer> on 2025-06-01 00:00:00+00:00
+[2025-08-11T06:12:59.731+0000] {standard_task_runner.py:60} INFO - Started process 214 to run task
+[2025-08-11T06:12:59.734+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'start_weather_producer', 'scheduled__2025-06-01T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmpbnxsdb8v']
+[2025-08-11T06:12:59.738+0000] {standard_task_runner.py:88} INFO - Job 9: Subtask start_weather_producer
+[2025-08-11T06:12:59.804+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.start_weather_producer scheduled__2025-06-01T00:00:00+00:00 [running]> on host 3e2a6b15d0b2
+[2025-08-11T06:12:59.904+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Daniel' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='start_weather_producer' AIRFLOW_CTX_EXECUTION_DATE='2025-06-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-01T00:00:00+00:00'
+[2025-08-11T06:12:59.908+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-11T06:12:59.910+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/real_api_producer.py']
+[2025-08-11T06:12:59.918+0000] {subprocess.py:86} INFO - Output:
+[2025-08-11T06:13:08.106+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-08-11T06:13:08.108+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/real_api_producer.py", line 8, in <module>
+[2025-08-11T06:13:08.109+0000] {subprocess.py:93} INFO -     producer = KafkaProducer(
+[2025-08-11T06:13:08.110+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/producer/kafka.py", line 381, in __init__
+[2025-08-11T06:13:08.111+0000] {subprocess.py:93} INFO -     client = KafkaClient(metrics=self._metrics, metric_group_prefix='producer',
+[2025-08-11T06:13:08.113+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/client_async.py", line 244, in __init__
+[2025-08-11T06:13:08.114+0000] {subprocess.py:93} INFO -     self.config['api_version'] = self.check_version(timeout=check_timeout)
+[2025-08-11T06:13:08.115+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.8/site-packages/kafka/client_async.py", line 927, in check_version
+[2025-08-11T06:13:08.115+0000] {subprocess.py:93} INFO -     raise Errors.NoBrokersAvailable()
+[2025-08-11T06:13:08.116+0000] {subprocess.py:93} INFO - kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2025-08-11T06:13:08.137+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-08-11T06:13:08.150+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-08-11T06:13:08.159+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=weather_data_pipeline, task_id=start_weather_producer, execution_date=20250601T000000, start_date=20250811T061259, end_date=20250811T061308
+[2025-08-11T06:13:08.181+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 9 for task start_weather_producer (Bash command failed. The command returned a non-zero exit code 1.; 214)
+[2025-08-11T06:13:08.204+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-08-11T06:13:08.256+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

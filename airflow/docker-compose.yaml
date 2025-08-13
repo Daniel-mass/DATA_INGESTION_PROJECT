@@ -1,0 +1,121 @@
+version: '3.8'
+
+x-airflow-image: &airflow-image
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: custom-airflow:2.8.0
+
+services:
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+
+  kafka:
+    build:
+      context: .
+      dockerfile: Dockerfile.kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+    depends_on:
+      - zookeeper
+
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  airflow-init:
+    <<: *airflow-image
+    container_name: airflow-init
+    depends_on:
+      - postgres
+    entrypoint: /bin/bash
+    command: -c "airflow db init"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    volumes:
+      - airflow_data:/opt/airflow
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+    user: "${AIRFLOW_UID:-50000}:0"
+
+  airflow-webserver:
+    <<: *airflow-image
+    container_name: airflow-webserver
+    restart: always
+    depends_on:
+      - airflow-init
+      - postgres
+      - kafka
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    volumes:
+      - airflow_data:/opt/airflow
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+    command: webserver
+    user: "${AIRFLOW_UID:-50000}:0"
+
+  airflow-scheduler:
+    <<: *airflow-image
+    container_name: airflow-scheduler
+    restart: always
+    depends_on:
+      - airflow-webserver
+      - postgres
+      - kafka
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    volumes:
+      - airflow_data:/opt/airflow
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/opt/airflow/scripts
+    command: scheduler
+    user: "${AIRFLOW_UID:-50000}:0"
+
+  spark:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark
+    container_name: spark
+    environment:
+      - SPARK_MODE=master
+    ports:
+      - "7077:7077"
+      - "8081:8081"
+    depends_on:
+      - kafka
+    restart: always
+    volumes:
+      - ./scripts:/opt/bitnami/spark/scripts
+
+volumes:
+  postgres_data:
+  airflow_data:

@@ -1,0 +1,12 @@
+FROM wurstmeister/kafka
+
+USER root
+
+# Install Python3 and pip
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    pip3 install kafka-python requests
+
+# Copy your Python producer script
+COPY ./scripts/real_api_producer.py /opt/kafka/real_api_producer.py
+COPY ./scripts/real_api_consumer.py /opt/kafka/real_api_consumer.py
